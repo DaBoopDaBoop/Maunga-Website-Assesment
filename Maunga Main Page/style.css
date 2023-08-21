@@ -50,7 +50,7 @@ nav ul li a::before {
 }
 
 nav ul li a:hover::before {
-  transform: scaleX(1); /* Expand the line on hover */
+  transform: scaleX(1); 
 }
   
 
@@ -181,6 +181,51 @@ nav ul li a:hover::before {
   background-color: #afaeae;
 }
 
+.textbox-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url("/Images/mountain_view_light.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; 
+}
 
+.text-box {
+  color: white;
+  padding: 20px;
+  width: 80%;
+  max-width: 600px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.text-box h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.text-box h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.text-box a {
+  display: inline-block;
+  background-color: #ff99c8;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
 
 

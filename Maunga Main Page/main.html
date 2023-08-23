@@ -10,7 +10,7 @@
     <header class="bg">
         <nav>
             <a href="main.html">
-                <img src="/Images/Maunga_Club_white.png" alt="logo" width="300px">
+                <img src="/Images/Maunga_Club_white.png" alt="Maunga_logo" width="300px">
             </a>
             <ul>
                 <li><a href="main.html">Home</a></li>
@@ -32,7 +32,7 @@
 <footer class="footer-hidden">
     <div class="footer-content">
         <div class="footer-logo">
-            <img src="/Images/Maunga_Club_white.png" alt="logo">
+            <img src="/Images/Maunga_Club_white.png" alt="Maunga_logo">
         </div>
         <div class="footer-links">
             <ul>
@@ -45,6 +45,22 @@
     <div class="footer-bottom">
         <p>&copy; 2023 Maunga Website. All rights reserved by Mason.</p>
     </div>
+    <script>
+        let lastScrollPosition = 0;
+        const footer = document.querySelector("footer");
+    
+        window.addEventListener("scroll", () => {
+            const currentScrollPosition = window.scrollY;
+            
+            if (currentScrollPosition > lastScrollPosition) {
+                footer.classList.add("footer-hidden");
+            } else {
+                footer.classList.remove("footer-hidden");
+            }
+    
+            lastScrollPosition = currentScrollPosition;
+        });
+    </script>
 </footer>
 </body>
 </html>

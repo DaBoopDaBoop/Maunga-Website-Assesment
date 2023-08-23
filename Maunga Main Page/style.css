@@ -122,8 +122,8 @@ nav ul li a:hover::before {
     margin-top: 20px;
 }
 
-.scrolling-up footer {
-    transform: translateY(-100%);
+.footer-hidden {
+  transform: translateY(100%);
 }
 
 .bg-1 {
@@ -226,6 +226,43 @@ nav ul li a:hover::before {
   border-radius: 5px;
   text-decoration: none;
   font-weight: bold;
+}
+
+
+.chalot-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 50px 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.chalot-box {
+  flex: 1;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  margin: 10px;
+}
+
+.kereru-box {
+  background-size: cover;
+  background-position: center;
+  color: rgb(187, 43, 43);
+}
+
+.kakapo-box {
+  background-size: cover;
+  background-position: center;
+  color: rgb(158, 54, 54);
+}
+
+.pukeko-box {
+  background-size: cover;
+  background-position: center;
+  color: rgb(175, 72, 72);
 }
 
 

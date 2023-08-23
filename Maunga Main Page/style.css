@@ -1,40 +1,37 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-  }
-  
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  /*   position: sticky;
-    top: 0; */
-    height: 80px;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  nav img {
-    padding-left: 30px;
-  }
-  
-  nav ul li {
-    display: inline-block;
-    padding: 10px 50px;
+/* Navigation Styles */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
 
-  }
-  
-  nav ul li a{
-    text-decoration: none;
-    font-size: 21px;
-    font-family: sans-serif;
-    color: #ffffff;
-    position: relative; 
-  }
+nav img {
+  padding-left: 30px;
+}
 
-  nav ul li a:hover {
-    color: #ff99c8;
-  }
-    
+nav ul li {
+  display: inline-block;
+  padding: 10px 50px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 21px;
+  font-family: sans-serif;
+  color: #ffffff;
+  position: relative;
+}
+
+nav ul li a:hover {
+  color: #ff99c8;
+}
 
 nav ul li a::before {
   content: "";
@@ -42,98 +39,88 @@ nav ul li a::before {
   width: 100%;
   height: 2px;
   background-color: #ff99c8;
-  bottom: -5px; 
+  bottom: -5px;
   left: 0;
-  transform: scaleX(0); 
+  transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.3s ease-in-out;
 }
 
 nav ul li a:hover::before {
-  transform: scaleX(1); 
+  transform: scaleX(1);
 }
-  
 
-  body, html {
-    height: 100%;
-  }
+/* Background Styles */
+body, html {
+  height: 100%;
+}
 
+.bg {
+  background-image: url("/Images/mountain_view_dark.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
-  .bg {
-    background-image: url("/Images/mountain_view_dark.jpg");
-
-    height:100%;
-
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-  }
-
-  footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: #080808; 
-    color: #fff;
-    padding: 20px 0;
-    box-shadow: 0px 0px 10px rgba(36, 35, 35, 0.5);
-    transition: transform 0.3s ease-in-out;
+/* Footer Styles */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #080808;
+  color: #fff;
+  padding: 20px 0;
+  box-shadow: 0px 0px 10px rgba(36, 35, 35, 0.5);
+  transition: transform 0.3s ease-in-out;
 }
 
 .footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .footer-logo img {
-    max-width: 100px;
+  max-width: 100px;
 }
 
 .footer-links ul {
-    list-style: none;
-    display: flex;
-    justify-content: center; 
+  list-style: none;
+  display: flex;
+  justify-content: center;
 }
 
 .footer-links li {
-    margin: 0 15px;
+  margin: 0 15px;
 }
 
 .footer-links a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 15px;
-    font-family: sans-serif;
-    transition: color 0.3s ease-in-out;
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: sans-serif;
+  transition: color 0.3s ease-in-out;
 }
 
 .footer-links a:hover {
-    color: #ff99c8; 
+  color: #ff99c8;
 }
 
 .footer-bottom {
-    text-align: center;
-    margin-top: 20px;
+  text-align: center;
+  margin-top: 20px;
 }
 
 .footer-hidden {
   transform: translateY(100%);
 }
 
-.bg-1 {
-  background-image: url("/Images/mountain_view_light.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100%;
-}
-
+/* Box Styles */
 .centered-box {
   position: absolute;
   top: 50%;
@@ -144,23 +131,23 @@ nav ul li a:hover::before {
 .outer-box {
   background-color: transparent;
   border: 10px solid #fff;
-  padding: 3px; 
+  padding: 3px;
 }
 
 .inner-box {
-  background-color: rgba(255, 255, 255); 
+  background-color: rgba(255, 255, 255);
   padding: 100px 120px;
   text-align: center;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .inner-box h1 {
-  margin-bottom: 10px; 
+  margin-bottom: 10px;
   color: #222;
 }
 
 .inner-box p {
-  margin-bottom: 20px; 
+  margin-bottom: 20px;
   color: #555;
 }
 
@@ -174,13 +161,13 @@ nav ul li a:hover::before {
   transition: background-color 0.3s ease-in-out;
   font-family: 'Roboto', sans-serif;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  
 }
 
 .sign-up-button:hover {
   background-color: #afaeae;
 }
 
+/* Textbox Container Styles */
 .textbox-container {
   position: relative;
   width: 100%;
@@ -192,7 +179,7 @@ nav ul li a:hover::before {
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden; 
+  overflow: hidden;
 }
 
 .text-box {
@@ -228,7 +215,7 @@ nav ul li a:hover::before {
   font-weight: bold;
 }
 
-
+/* Box Row Styles */
 .chalot-row {
   display: flex;
   justify-content: space-between;
@@ -247,10 +234,10 @@ nav ul li a:hover::before {
   margin: 10px;
   display: flex;
   flex-direction: column;
-  gap: 10px; 
+  gap: 10px;
 }
 
-
+/* Link Box Styles */
 .kereru-box {
   background-size: cover;
   background-position: center;
@@ -267,44 +254,32 @@ nav ul li a:hover::before {
   background-size: cover;
   background-position: center;
   color: rgb(175, 72, 72);
-  padding-bottom: 38px;
+  padding-bottom: 21px;
 }
 
-.kereru-link {
-  border-top: solid 5px#bdb8b8;
-  height: 50px;
-  line-height: 50px;
-}
-
-.kereru-link a { 
-  color: #030303;
-  font-size: 21px;
-}
-
+/* Link Styles */
+.kereru-link,
+.kakapo-link,
 .pukeko-link {
-  border-top: solid 5px#bdb8b8;
+  border-top: solid 5px #bdb8b8;
   height: 50px;
   line-height: 50px;
 }
 
-.pukeko-link a { 
+.kereru-link a,
+.kakapo-link a,
+.pukeko-link a {
   color: #030303;
   font-size: 21px;
 }
 
-.kakapo-link {
-  border-top: solid 5px#bdb8b8;
-  height: 50px;
-  line-height: 50px;
-}
-
-.kakapo-link a { 
-  color: #030303;
-  font-size: 21px;
-}
-
-.join-form {
-  margin-top: 20px;
+/* Background Box Styles */
+.bg-1 {
+  background-image: url("/Images/mountain_view_light.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
 }
 
 .bg-2 {
@@ -313,13 +288,13 @@ nav ul li a:hover::before {
   background-repeat: no-repeat;
   background-size: 40vh cover;
   height: 30vh;
- 
 }
 
 .bg-2 nav {
- background-color: rgb(255, 255, 255,0.6);
+  background-color: rgba(255, 255, 255, 0.6);
 }
 
+/* Contact Info Section */
 .contact-info {
   padding: 100px 0;
   background-color: #f5f5f5;
@@ -361,7 +336,7 @@ nav ul li a:hover::before {
   margin-left: -1em;
 }
 
-
+/* Join Section Styles */
 .join {
   padding: 100px 0;
   background-color: rgba(194, 180, 180, 0.8);
@@ -414,6 +389,7 @@ nav ul li a:hover::before {
   background-color: #ff66a3;
 }
 
+/* Contact Section Styles */
 .contact-section {
   padding: 100px 0;
   background-color: #f5f5f5;
@@ -425,6 +401,7 @@ nav ul li a:hover::before {
   margin-bottom: 20px;
 }
 
+/* Black Border Button Styles */
 .black-border-button {
   display: inline-block;
   padding: 10px 20px;
@@ -440,4 +417,3 @@ nav ul li a:hover::before {
   background-color: #000;
   color: #fff;
 }
-

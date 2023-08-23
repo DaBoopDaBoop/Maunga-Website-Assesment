@@ -265,4 +265,36 @@ nav ul li a:hover::before {
   color: rgb(175, 72, 72);
 }
 
+.kereru-link {
+  border-top: solid 5px#bdb8b8;
+  height: 50px;
+  line-height: 50px;
+}
+
+.kereru-link a { 
+  color: #030303;
+  font-size: 21px;
+}
+
+.pukeko-link {
+  border-top: solid 5px#bdb8b8;
+  height: 50px;
+  line-height: 50px;
+}
+
+.pukeko-link a { 
+  color: #030303;
+  font-size: 21px;
+}
+
+.kakapo-link {
+  border-top: solid 5px#bdb8b8;
+  height: 50px;
+  line-height: 50px;
+}
+
+.kakapo-link a { 
+  color: #030303;
+  font-size: 21px;
+}
 

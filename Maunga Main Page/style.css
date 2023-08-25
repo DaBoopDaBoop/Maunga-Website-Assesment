@@ -257,9 +257,19 @@ footer {
   padding-bottom: 21px;
 }
 
+.pukeko-box p{
+ padding-bottom: 20px;
+}
+
+
 /* Link Styles */
 .kereru-link,
-.kakapo-link,
+.kakapo-link {
+  border-top: solid 5px #bdb8b8;
+  height: 50px;
+  line-height: 50px;
+}
+
 .pukeko-link {
   border-top: solid 5px #bdb8b8;
   height: 50px;
@@ -416,4 +426,133 @@ footer {
 .black-border-button:hover {
   background-color: #000;
   color: #fff;
+}
+
+/* Chalets Section Styles */
+.chalets {
+  background-color: #42abf1;
+  padding: 100px;
+}
+
+.kereru-chalet-image {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  background-color: #ffffff;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.kereru-chalet-image a {
+  display: inline-block;
+}
+
+.kereru-chalet-image img {
+  width: 300px; 
+  height: 250px; 
+  margin-right: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.kereru-chalet-image img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.pukeko-chalet-image {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  background-color: #ffffff;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.pukeko-chalet-image a {
+  display: inline-block;
+}
+
+.pukeko-chalet-image img {
+  width: 300px; 
+  height: 250px; 
+  margin-right: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.pukeko-chalet-image img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.kakapo-chalet-image {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  background-color: #ffffff;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.kakapo-chalet-image a {
+  display: inline-block;
+}
+
+.kakapo-chalet-image img {
+  width: 300px; 
+  height: 250px; 
+  margin-right: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.kakapo-chalet-image img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.chalet h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.chalet-details {
+  flex: 1;
+  padding: 20px;
+}
+
+.chalet h1 {
+  font-size: large;
+  justify-content: center;
+}
+
+.chalet-title h1 {
+  font-size: 100px;
+  justify-content: center;
+  text-align: center;
+  color: rgb(187, 43, 43);
+  margin-bottom: 10px;
+}
+
+/*Chalet Text Styles*/
+.chalet h2 {
+  font-size: 45px;
+  margin-bottom: 35px;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto Mono', monospace;
+  color: rgb(187, 43, 43);
+}
+
+.chalet ul {
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto Mono', monospace;
+  padding: 10px;
+  color: rgb(187, 43, 43);
 }

@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maunga Club</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="lightbox2-2.11.4\lightbox2-2.11.4\dist\css\lightbox.css">
-    <script src="lightbox2-2.11.4/lightbox2-2.11.4/dist/js/lightbox-plus-jquery.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fancybox@3.5.7/dist/jquery.fancybox.min.css">
 </head>
 <body>
     <header class="bg-1">
@@ -48,15 +47,14 @@
 </div>
 <section class="chalets" id="chalets">
     <div class="container">
-        <h2>Our Chalets</h2>
+        <div class="chalet-title"><h1>Our Chalets</h1></div>
         <div class="chalet">
-            <div class="chalet-image">
-                <img src="Images/kakapo/cabin_exterior.jpg" alt="Kākāpo Chalet" data-lightbox="kakapo">
-                <img src="Images/kakapo/cabin_view.jpg" alt="Kakapo cabin" data-lightbox="kakapo">
-                <img src="Images/kakapo/bunk_room.jpg" alt="Kakapo bunk room" data-lightbox="kakapo">
-            </div>
-            <div class="chalet-details">
-                <h3>Kākāpo Chalet</h3>
+            <div class="kakapo-chalet-image" id="#kakapo-chalot">
+                <a data-fancybox="gallery" href="../Images/kakapo/cabin_exterior.jpg"><img src="../Images/kakapo/cabin_exterior.jpg" alt="Kākāpo Chalet"></a>
+                <a data-fancybox="gallery" href="../Images/kakapo/cabin_view.jpg"><img src="../Images/kakapo/cabin_view.jpg" alt="Kakapo cabin"></a>
+                <a data-fancybox="gallery" href="../Images/kakapo/bunk_room.jpg"><img src="../Images/kakapo/bunk_room.jpg" alt="Kakapo bunk room"></a>
+                <div class="chalet-details">
+                <h2>Kākāpo Chalet</h2>
                 <ul>
                     <li>Accommodates up to 10 adults and 30 children</li>
                     <li>Largest Kitchen, Dining and Living Area</li>
@@ -65,29 +63,29 @@
                 </ul>
             </div>
         </div>
+    </div>
         <div class="chalet">
-            <div class="chalet-image">
-                <img src="Images/pukeko/chalet_exterior.jpg" alt="Pūkeko Chalet" data-lightbox="pukeko">
-                <img src="Images/pukeko/chalet_view.jpg" alt="Pūkeko Chalet" data-lightbox="pukeko">
-                <img src="Images/pukeko/adult_bedroom.jpg" alt="Pūkeko Chalet" data-lightbox="pukeko">
-            </div>
-            <div class="chalet-details">
-                <h3>Pūkeko Chalet</h3>
+            <div class="pukeko-chalet-image" id="#pukeko-chalot">
+                <a data-fancybox="gallery1" href="../Images/pukeko/chalet_exterior.jpg"><img src="../Images/pukeko/chalet_exterior.jpg" alt="Pūkeko Chalet Exterior" ></a>
+                <a data-fancybox="gallery1" href="../Images/pukeko/chalet_view.jpg"><img src="../Images/pukeko/chalet_view.jpg" alt="Pūkeko Chalet" ></a>
+                <a data-fancybox="gallery1" href="../Images/pukeko/adult_bedroom.jpg"><img src="../Images/pukeko/adult_bedroom.jpg" alt="Pūkeko Bedroom"></a>
+                <div class="chalet-details">
+                <h2>Pūkeko Chalet</h2>
                 <ul>
                     <li>Accommodates up to 6 adults and 15 children</li>
                     <li>Great for large groups/families wanting a chalet to themselves </li>
                     <li>Limits on adult/child number ensure comfortable stay</li>
                 </ul>
             </div>
-        </div>
+        </div>   
+    </div>
         <div class="chalet">
-            <div class="chalet-image">
-                <img src="Images/kereru/cabin_exterior.jpg" alt="Kererū Chalet" data-lightbox="kereru">
-                <img src="Images/kereru/adult_bedroom.jpg" alt="Kereu Chalet adult" data-lightbox="kereru">
-                <img src="Images/kereru/kids_bedroom.jpg" alt="Kereru kids bedroom" data-lightbox="kereru">
-            </div>
-            <div class="chalet-details">
-                <h3>Kererū Chalet</h3>
+            <div class="kereru-chalet-image" id="#kereru-chalot">
+                <a data-fancybox="gallery2" href="../Images/kereru/cabin_exterior.jpg"><img src="../Images/kereru/cabin_exterior.jpg" alt="Kererū Chalet"></a>
+                <a data-fancybox="gallery2" href="../Images/kereru/adult_bedroom.jpg"><img src="../Images/kereru/adult_bedroom.jpg" alt="Kereu Chalet adult"></a>
+                <a data-fancybox="gallery2" href="../Images/kereru/kids_bedroom.jpg"><img src="../Images/kereru/kids_bedroom.jpg" alt="Kereru kids bedroom"></a>
+                <div class="chalet-details">
+                <h2>Kererū Chalet</h2>
                 <ul>
                     <li>Accommodates up to 2 adults and 4 children</li>
                     <li>Great Option for a family</li>
@@ -98,6 +96,7 @@
             </div>
         </div>
     </div>
+</div>
 <footer class="footer-hidden">
     <div class="footer-content">
         <div class="footer-logo">
@@ -131,12 +130,7 @@
         lastScrollPosition = currentScrollPosition;
     });
 </script>
-<script>
-    lightbox.option({
-        'resizeDuration': 200,
-        'wrapAround': true,
-        'alwaysShowNavOnTouchDevices': true
-    });
-</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 </body>
 </html>
